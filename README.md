@@ -57,6 +57,34 @@ The data is organized using **fact, dimension, and bridge tables** to support an
 
 ---
 
+## 🧩 Data Model
+
+The Power BI data model uses a combination of **fact, dimension, and bridge tables** to support sales, customer, product, and campaign analysis.
+
+### Model Structure
+
+| Table | Type | Purpose |
+|---|---|---|
+| `fact_transaction` | Fact | Transaction and sales data |
+| `dim_customer` | Dimension | Customer information |
+| `dim_product` | Dimension | Product information |
+| `dim_campaign` | Dimension | Campaign information |
+| `bridge_campaign_customer` | Bridge | Links customers with campaigns |
+| `fact_coupon_redemption` | Fact | Coupon redemption records |
+
+### Model Design
+
+The model was designed to maintain clear relationships between transactional data and descriptive dimensions while supporting interactive filtering and KPI calculations in Power BI.
+
+### Data Model Preview
+
+<p align="center">
+  <img src="images/data_modeling.png" width="900">
+</p>
+
+---
+
+
 ## 📊 Key KPIs
 
 The dashboard tracks the following key metrics:
@@ -74,11 +102,13 @@ The dashboard tracks the following key metrics:
 
 ---
 
-## 📈 Dashboard
+## 📊 Dashboard Preview
 
 The Power BI dashboard consists of three analytical pages.
 
 ### 1. Executive Overview
+
+![Executive Overview](images/executive.png)
 
 Provides a high-level view of sales performance.
 
@@ -95,6 +125,8 @@ Provides a high-level view of sales performance.
 
 ### 2. Sales Drivers Analysis
 
+![Sales Drivers Analysis](images/sales.png)
+
 Focuses on customer behavior and the main drivers of sales.
 
 **Includes:**
@@ -108,6 +140,8 @@ Focuses on customer behavior and the main drivers of sales.
 - Revenue by Brand
 
 ### 3. Marketing & Campaign Analysis
+
+![Marketing & Campaign Analysis](images/marketing.png)
 
 Focuses on campaign reach and customer response.
 
@@ -196,19 +230,21 @@ Recommendations
 ```text
 Retail-Sales-Performance-Analysis/
 │
-├── README.md
 │
-├── Documentation/
-│   ├── 01_Project_Charter.pdf
-│   ├── 02_Data_Profiling_and_Cleaning_Report.pdf
-│   ├── 03_Data_Model_and_DAX_Documentation.pdf
-│   └── 04_Dashboard_and_Business_Insights_Report.pdf
+├── Docs/
+│   ├── Project_Charter.pdf
+│   ├── Data_Profiling_and_Cleaning_Report.pdf
+│   ├── Data_Model_and_DAX_Documentation.pdf
+│   └──_Dashboard_and_Business_Insights_Report.pdf
 │
 ├── SQL/
-│   └── SQL_Analysis.sql
+│   └── campaign_analysis.sql
+│   └── customer_analysis.sql
+│   └── fact_transaction.sql
+│   └── product_analysis.sql
 │
 ├── PowerBI/
-│   └── Retail_Sales_Performance_Analysis.pbix
+│   └── retail_mart.pbix
 │
 └── README.md
 ```
