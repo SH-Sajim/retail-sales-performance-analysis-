@@ -108,7 +108,7 @@ The Power BI dashboard consists of three analytical pages.
 
 ### 1. Executive Overview
 
-![Executive Overview](images/executive.png)
+![Executive Overview](images/executive.png) 
 
 Provides a high-level view of sales performance.
 
@@ -292,9 +292,12 @@ The project demonstrates an end-to-end approach to transforming raw retail data 
 
 ---
 
-## 👤 Author
+## 👨‍💻 Author
 
 **Shahadat Hossain Sajim**  
 Data Analyst | Retail & E-Commerce
+
+- 🔗 **GitHub:** [SH-SAJIM](https://github.com/SH-SAJIM)
+- 💼 **LinkedIn:** [Shahadat Hossain Sajim](https://www.linkedin.com/in/shahadat-hossain-sajim/)
 
 **Skills:** PostgreSQL • SQL • Power BI • DAX • Excel  • Git • GitHub
