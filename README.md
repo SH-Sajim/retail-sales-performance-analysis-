@@ -109,6 +109,7 @@ The Power BI dashboard consists of three analytical pages.
 ### 1. Executive Overview
 
 ![Executive Overview](images/executive.png) 
+![Executive Overview](images/executive.png)
 
 Provides a high-level view of sales performance.
 
